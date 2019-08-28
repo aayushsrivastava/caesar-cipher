@@ -9,9 +9,9 @@ get "/" do
 	key        = session.delete(:key)
 	ciphertext = session.delete(:ciphertext)
 	erb :form, { :locals => { 
-						:plaintext => plaintext,
-   						:key => key,
-						:ciphertext => ciphertext }	}
+	                    :plaintext => plaintext,
+	                    :key => key,
+	                    :ciphertext => ciphertext }	}
 end
 
 post "/" do
